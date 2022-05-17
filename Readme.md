@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mihhail Hohlov](https://up.htmlacademy.ru/htmlcss/34/user/2070633).
-* Наставник: `Неизвестно`.
+* Наставник: [Slonov_Boris](https://htmlacademy.ru/profile/slonov_boris).
 
 ---
 
