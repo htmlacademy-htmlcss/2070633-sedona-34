@@ -9,6 +9,9 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
+      <div class="header-logo">
+        <img class="image-logo" alt="sedona-logo" src="images/header/logo.svg" width="139" height="70">
+      </div>
       <ul class="navigation-list">
         <li class="navitation-item">
           <a href="main.html" class="navigation-link">Главная</a>
@@ -24,11 +27,13 @@
         <li class="navitation-item">
           <a href="#" class="navigation-link">
             <span class="visually-hidden">Поиск</span>
+            <img alt="search" src="Images/Header/search.svg" width="42" height="66">
           </a>
         </li>
         <li class="navitation-item">
           <a href="#" class="navigation-link">
-            <span class="visually-hidden">Корзина</span>
+            <span class="visually-hidden">Избранное</span>
+            <img alt="favotits" src="images/Header/favorits.svg"  width="42" height="66">
           </a>
         </li>
         <li class="navitation-item">
@@ -38,8 +43,11 @@
     </nav>
   </header>
   <main class="main-index">
-    <h1 class="visually-hidden">Welcome to the gorgeius Sedona "Becouse the grande canyon sucks!"</h1>
-    <img class="logo" alt="sedona logo" src="#">
+    <section class="promo-section">
+      <h1 class="visually-hidden">Welcome to the gorgeius Sedona "Becouse the grande canyon sucks!"</h1>
+      <img class="logo" alt="sedona logo" src="Images/Index/index-background.jpg" height="485" width="1200">
+      <img class="logo-welcome" alt="welcome-text" src="images/Index/welcome.svg" height="352" width="458">
+    </section>
     <section class="start-text">
       <h2>Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h2>
@@ -52,22 +60,22 @@
           <span class="adventages-description">— №1 —</span>
           <p class="adventages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <p><img src="#" class="adventeges-img" alt="sedona picture"></p>
+        <p><img src="Images/Index/photo-1.jpg" class="adventeges-img" alt="sedona picture" width="800" height="384"></p>
         <ul class="adventages-list">
           <li class="adventages-item">
-            <img src="#" alt="House-icon" class="advanteges-icon">
+            <img src="Images/Index/house-logo.svg" alt="House-icon" class="advanteges-icon"  width="74.7" height="72">
             <h3 class="advanteges-title">Жилье</h3>
             <p class="advanteges-description">Рекомендуем пожитьв настоящем мотеле,
               всё как в кино!</p>
           </li>
           <li class="adventages-item">
-            <img src="#" alt="Hamburger-icon" class="advanteges-icon">
+            <img src="Images/Index/food.svg" alt="Hamburger-icon" class="advanteges-icon"  width="73.81" height="70">
             <h3 class="advanteges-title">Еда</h3>
             <p class="advanteges-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="adventages-item">
-            <img src="#" alt="box-icon" class="advanteges-icon">
+            <img src="Images/Index/gift-logo.svg" alt="box-icon" class="advanteges-icon"  width="64" height="75.95">
             <h3 class="advanteges-title">Сувениры</h3>
             <p class="advanteges-description">Не только китайского,
               но и настоящего местного производства!</p>
@@ -75,7 +83,7 @@
         </ul>
       </li>
       <li>
-        <p><img class="advanteges-img" src="#" alt="kanyon"></p>
+        <p><img class="advanteges-img" src="Images/Index/photo-2.jpg" alt="kanyon"  width="800" height="384"></p>
         <div>
           <h3 class="advanteges-title">Не только китайского,
             но и настоящего местного производства!</h3>
@@ -102,17 +110,18 @@
         <p class="advanteges-description">Большинство едет в Гранд Каньон и толпится там</p>
       </li>
     </ul>
-    <div class="find-hotel">
-      <h3 class="hotel-title">Заинтересовались?</h3>
+    <section class="find-hotel">
+      <h2 class="hotel-title">Заинтересовались?</h2>
       <p class="hotel-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
         Седоне
       </p>
       <button type="button" class="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-    </div>
+    </section>
   </main>
   <footer class="main-footer">
     <section class="subscription">
-      <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+      <img alt="sedona-mountains" src="images/Footer/background-subscription.jpg"  width="1200" height="401">
+      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p class="sub-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newletter-email"
@@ -124,27 +133,30 @@
       <div class="social-link">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="button" href="https://vk.com/htmlacademy" target="_blank">
+              <img alt="vk-logo" src="images/Footer/vk-logo.svg"  width="24" height="14">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
+            <a class="button" href="https://t.me/htmlacademy" target="_blank">
+              <img alt="telegram-logo" src="images/Footer/telegram-logo.svg"  width="18" height="15.1">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <img alt="youtube-logo" src="images/Footer/youtube-logo.svg"  width="22" height="17">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
       </div>
       <div class="phone">
-        <a class="contants-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+        <a class="contants-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
       <div class="footer-logo">
-        <img class="footer-img" src="#" alt="html.academy">
+        <img class="footer-img" src="Images/Footer/HTML Academy.svg" alt="html.academy" width="114.9" height="32.9">
       </div>
     </div>
   </footer>
