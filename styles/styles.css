@@ -61,8 +61,12 @@ footer {
   background: #82B3D3;
 }
 
-.advantages-item .advantages-bonus-color {
+.advantages-item ,.advantages-bonus-color {
   color: #FFFFFF;
+}
+
+.advantages-main-color{
+  color: #000000;
 }
 
 button{
@@ -92,7 +96,7 @@ button{
   line-height: 28px;
 
   text-transform: uppercase;
-  color: #000000;
+
 }
 
 .advantages-description {
