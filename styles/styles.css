@@ -115,30 +115,19 @@ footer {
   height: 26px;
 }
 
-.advantages {
-  display: flex;
-  flex-wrap: wrap;
-}
+.advantages {}
 
 .first-list-image {
-  display: flex;
-  width: 800px;
-  height: 384px;
+  max-width: 800px;
 }
 
 .first-cell {
-  width: 400px;
-  height: 384px;
-  display: flex;
-  flex-direction: column;
+  max-width: 400px;
   background: #82B3D3;
 }
 
 .advantages-item {
-  display: flex;
   width: 400px;
-  height: 384px;
-  flex-direction: column;
 }
 
 .advantages-bonus-color {
@@ -156,12 +145,10 @@ button {
 .advantages-number-second {
   font-size: 18px;
   line-height: 21px;
-
   color: #FFFFFF;
 }
 
 .advantages-list {
-  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -169,14 +156,11 @@ button {
 .advantages-description-second {
   font-size: 18px;
   line-height: 21px;
-
   color: #FFFFFF;
 }
 
 .bridge-cell {
   background: #82B3D3;
-  display: flex;
-  flex-direction: column;
   max-width: 400px;
 }
 
@@ -184,21 +168,17 @@ button {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-
   text-transform: uppercase;
-
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
-
 }
 
 .advantages-number {
   font-size: 18px;
   line-height: 21px;
-
   color: #000000;
 }
 
@@ -223,7 +203,6 @@ button {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-
 }
 
 .hotel-description {
