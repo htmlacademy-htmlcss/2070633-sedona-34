@@ -161,6 +161,7 @@ button {
 }
 
 .advantages-list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -174,6 +175,9 @@ button {
 
 .bridge-cell {
   background: #82B3D3;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
 }
 
 .advantages-title {
