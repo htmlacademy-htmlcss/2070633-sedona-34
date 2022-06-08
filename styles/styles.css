@@ -14,7 +14,9 @@
   font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -89,7 +91,7 @@ footer {
 }
 
 .promo-section {
-  background-image: url(../Images/Index/index-background.jpg);
+  background-image: url("../Images/Index/index-background.jpg");
   background-size: cover;
 }
 
@@ -113,11 +115,32 @@ footer {
   height: 26px;
 }
 
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-list-image {
+  display: flex;
+  width: 800px;
+  height: 384px;
+}
+
 .first-cell {
+  width: 400px;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
   background: #82B3D3;
 }
 
-.advantages-item,
+.advantages-item {
+  display: flex;
+  width: 400px;
+  height: 384px;
+  flex-direction: column;
+}
+
 .advantages-bonus-color {
   color: #FFFFFF;
 }
@@ -135,6 +158,11 @@ button {
   line-height: 21px;
 
   color: #FFFFFF;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-description-second {
@@ -180,6 +208,8 @@ button {
 
 .sedona-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .welcome-title .hotel-title {
@@ -213,11 +243,17 @@ button {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 94px 398px auto 398px;
+  width: 404px;
+  height: 36px;
 }
 
 .subscription-info-index {
   text-align: center;
   color: #FFFFFF;
+  width: 472px;
+  height: 52px;
+  margin: 29px 362px auto 362px;
 }
 
 .second-button {
@@ -265,7 +301,7 @@ button {
 }
 
 .div-filtra {
-  background-image: url(../Images/Catalog/Catalog-filter.jpg);
+  background-image: url("../Images/Catalog/Catalog-filter.jpg");
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
@@ -366,16 +402,17 @@ button {
   margin: 45px auto 35px 70px;
   list-style: none;
 }
-.phone{
-  display:block;
-  width:720px;
-  height:50px;
-  margin:40px 0px 30px 0px ;
+
+.phone {
+  display: block;
+  width: 720px;
+  height: 50px;
+  margin: 40px 0px 30px 0px;
 }
 
-.footer-logo{
-  display:block;
-  width:115px;
-  height:34px;
-  margin:48px 70px 38px auto;
+.footer-logo {
+  display: block;
+  width: 115px;
+  height: 34px;
+  margin: 48px 70px 38px auto;
 }
