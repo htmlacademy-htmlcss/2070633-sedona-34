@@ -115,8 +115,6 @@ footer {
   height: 26px;
 }
 
-.advantages {}
-
 .first-list-image {
   max-width: 800px;
 }
@@ -126,8 +124,10 @@ footer {
   background: #82B3D3;
 }
 
-.advantages-item {
-  width: 400px;
+.advantages-item
+ {
+  padding: 81px 85px;
+  max-width: 400px;
 }
 
 .advantages-bonus-color {
@@ -142,6 +142,11 @@ button {
   border: 0;
 }
 
+.advantages-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages-number-second {
   font-size: 18px;
   line-height: 21px;
@@ -149,6 +154,8 @@ button {
 }
 
 .advantages-list {
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -172,6 +179,7 @@ button {
 }
 
 .advantages-description {
+  max-width: 230px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -191,7 +199,10 @@ button {
 }
 
 .sedona-list {
+  list-style: none;
+  display: flex;
   text-align: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
