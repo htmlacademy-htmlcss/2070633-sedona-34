@@ -10,39 +10,40 @@
 <body>
   <div class="page-container">
     <header class="page-header">
-      <nav class="navigation">
-        <div class="header-logo">
-          <img class="image-logo" alt="sedona-logo" src="images/header/logo.svg" width="139" height="70">
-        </div>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="main.html" class="navigation-link">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a href="about.html" class="navigation-link">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a href="hotels.html" class="navigation-link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-user">
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">
-              <span class="visually-hidden">Поиск</span>
-              <img alt="search" src="Images/Header/search.svg" width="42" height="66">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">
-              <span class="visually-hidden">Избранное</span>
-              <img alt="favourites" src="images/Header/heart.svg" width="19" height="17">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="inner">
+        <nav class="navigation">
+          <a class="header-logo">
+            <img class="image-logo" alt="sedona-logo" src="images/header/logo.svg" width="139" height="70">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="index.html" class="navigation-link">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a href="about.html" class="navigation-link">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a href="catalog.html" class="navigation-link">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
     </header>
     <main class="main-index">
       <div class="main-container">
@@ -52,19 +53,19 @@
             <img class="logo-welcome" alt="welcome-text" src="images/Index/welcome.svg" height="352" width="458">
           </section>
           <section class="start-text">
-            <h2 class="welcome-title welcome-title-place">Седона — небольшой городок в Аризоне,<br>
+            <h2 class="welcome-title welcome-title-place">Седона — небольшой городок в Аризоне,
               заслуживающий большего!</h2>
             <p class="welcome-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           </section>
         </div>
         <ul class="sedona-list">
-          <li class="sedona-list-item advantages advantages-layout">
+          <li class="advantages advantages-layout">
             <div class="first-cell">
               <h3 class="advantages-title advantages-bonus-color">Настоящий городок</h3>
               <span class="advantages-number-second">— №1 —</span>
               <p class="advantages-description-second">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-              <img src="Images/Index/photo-1.jpg" alt="sedona picture" width="800" height="384">
+            <img src="Images/Index/photo-1.jpg" alt="sedona picture" width="800" height="384">
             <ul class="advantages-list">
               <li class="advantages-item ocean-color advantages-main-color">
                 <img src="Images/Index/house-logo.svg" alt="House-icon" class="advantages-icon" width="75" height="72">
@@ -86,9 +87,8 @@
               </li>
             </ul>
           </li>
-          <li class="sedona-list-item advantages-layout">
-              <img class="advantages-img" src="Images/Index/photo-2.jpg" alt="kanyon"
-                 width="800" height="384">
+          <li class="advantages-layout">
+            <img class="advantages-img" src="Images/Index/photo-2.jpg" alt="kanyon" width="800" height="384">
             <div class="bridge-cell">
               <h3 class="advantages-title advantages-bonus-color">Там есть
                 мост дьявола</h3>
@@ -96,19 +96,19 @@
               <p class="advantages-description-second">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
-          <li class="sedona-list-item air-color advantages-main-color">
+          <li class="air-color advantages-main-color advantages-item">
             <h3 class="advantages-title">Небольшая
               площадь</h3>
             <span class="advantages-number">— №3 —</span>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="sedona-list-item ocean-color advantages-main-color">
+          <li class="ocean-color advantages-main-color advantages-item">
             <h3 class="advantages-title">Красивая
               дорога</h3>
             <span class="advantages-number">— №4 —</span>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="sedona-list-item air-color advantages-main-color">
+          <li class="air-color advantages-main-color advantages-item">
             <h3 class="advantages-title">Мало
               туристов</h3>
             <span class="advantages-number">— №5 —</span>
