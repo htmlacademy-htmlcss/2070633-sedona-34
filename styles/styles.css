@@ -71,6 +71,7 @@ footer {
 }
 
 .header-logo {
+  width: 139px;
   margin-right: 30px;
 }
 
@@ -110,11 +111,6 @@ footer {
 .logo-welcome {
   display: block;
   margin: 0 auto;
-}
-
-.promo-container {
-  width: 1200px;
-  height: auto;
 }
 
 .welcome-title-place {
@@ -299,23 +295,61 @@ button {
 
 /*Catalog*/
 
+.main-inner{
+  display: flex;
+  flex-wrap: wrap;
+
+}
 .inner-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  margin-bottom: 10px;
 }
 
 .div-filtra {
   background-image: url("../Images/Catalog/Catalog-filter.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   color: #FFFFFF;
+  width: 1200px;
+}
+
+.breadcrumbs{
+flex-direction: row;
+display: flex;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+.first-filter{
+  margin:40px 70px 70px 70px;
+  width:150px;
+  height:149px;
+}
+
+.second-filter{
+  margin:40px 175px 40px 40px;
+  width:145px;
+  height:149px;
+
+}
+
+.filter-buttons{
+
+}
+.catalog-filter{
+display:flex;
+flex-direction: row;
+}
+
+.catalog-products{
+flex-direction: row;
 }
 
 .catalog-filter-title {
