@@ -402,12 +402,13 @@ button {
   visibility: hidden;
 }
 
-
+.main-footer{
+  text-align: center;
+}
 
 .footer-social-list {
   display: flex;
-  width: 142px;
-  height: 40px;
+  max-width: 142px;
   margin: 45px auto 35px 70px;
   list-style: none;
 }
