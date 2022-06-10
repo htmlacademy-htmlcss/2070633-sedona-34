@@ -64,7 +64,6 @@ footer {
   background-color: #FFFFFF;
 }
 
-
 .page-header {
   font-weight: 700;
   font-size: 20px;
@@ -116,7 +115,6 @@ footer {
 .welcome-title-place {
   max-width: 620px;
   margin: 0 auto;
-
 }
 
 .welcome-text {
@@ -298,7 +296,6 @@ button {
 .main-inner {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .inner-title {
@@ -338,7 +335,6 @@ button {
   margin: 40px 175px 40px 40px;
   width: 145px;
   height: 149px;
-
 }
 
 .sorting {
@@ -387,10 +383,10 @@ button {
   border-radius: 4px;
 }
 
-.pagination{
-display:flex;
-list-style:none;
-margin-right: auto;
+.pagination {
+  display: flex;
+  list-style: none;
+  margin-right: auto;
 }
 
 .product-card-title {
@@ -401,7 +397,7 @@ margin-right: auto;
 }
 
 .product-list {
-  list-style:none;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
