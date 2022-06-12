@@ -89,13 +89,13 @@ footer {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .navigation-user {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   display: flex;
 }
 
@@ -163,9 +163,8 @@ button {
 }
 
 .advantages-list {
-  list-style: none;
+  list-style-type: none;
   display: flex;
-  margin: 0;
   padding: 0;
 }
 
@@ -208,7 +207,7 @@ button {
 }
 
 .sedona-list {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
@@ -388,7 +387,7 @@ button {
 
 .pagination {
   display: flex;
-  list-style: none;
+  list-style-type: none;
   margin-right: auto;
 }
 
@@ -400,7 +399,7 @@ button {
 }
 
 .product-list {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -439,25 +438,31 @@ button {
   text-align: center;
 }
 
-.page-footer-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-footer {
   text-align: center;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-social-list {
   display: flex;
   max-width: 142px;
   margin: 45px auto 35px 70px;
-  list-style: none;
+  list-style-type: none;
 }
 
 .phone {
