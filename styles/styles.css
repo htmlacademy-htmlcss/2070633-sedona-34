@@ -70,6 +70,7 @@ footer {
 .page-header {
   font-weight: 700;
   font-size: 20px;
+  height: 65px;
 }
 
 .header-logo {
@@ -81,7 +82,17 @@ footer {
   display: flex;
 }
 
-.navigation-item + .navigation-item {
+.navigation-item {
+  margin: 20px 0;
+}
+
+.navigation-item:first-child {
+  margin-right: 34px;
+  margin-left: 17px;
+}
+
+.navigation-item:last-child {
+  margin-right: 62px;
   margin-left: 34px;
 }
 
@@ -97,6 +108,7 @@ footer {
   padding: 0;
   list-style-type: none;
   display: flex;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -108,21 +120,22 @@ footer {
 .promo-section {
   background-image: url("../Images/Index/index-background.jpg");
   background-size: cover;
+  height: 485px;
 }
 
 .logo-welcome {
-  display: block;
-  margin: 0 auto;
+  margin: 51px 371px 82px;
 }
 
 .welcome-title-place {
   max-width: 620px;
-  margin: 0 auto;
+  margin: 63px 290px 0px;
 }
 
 .welcome-text {
-  margin: auto;
+  margin: 31px 273px 90px;
   max-width: 655px;
+  height: 26px;
 }
 
 .first-list-image {
@@ -135,8 +148,16 @@ footer {
 }
 
 .advantages-item {
-  padding: 81px 85px;
+  padding: 80px 85px 81px;
   max-width: 400px;
+}
+
+.advantages-icon {
+  margin: 0 78px 30px;
+}
+
+.last-row {
+  padding: 103px 85px 102px;
 }
 
 .advantages-bonus-color {
@@ -184,12 +205,15 @@ button {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
   max-width: 230px;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .advantages-number {
@@ -224,8 +248,15 @@ button {
   color: #000000;
 }
 
+.second-hotel-title {
+  margin: 91px 451px 29px;
+}
+
 .hotel-description {
   text-align: center;
+  width: 592px;
+  height: 52px;
+  margin: 0 304px 56px;
 }
 
 .basic-button {
@@ -237,6 +268,7 @@ button {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0 313px 93px;
 }
 
 .subscription-title-index {
