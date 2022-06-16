@@ -162,6 +162,11 @@ footer {
 
 .advantages-bonus-color {
   color: #FFFFFF;
+  margin: 92px 85px 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .advantages-main-color {
@@ -193,6 +198,7 @@ button {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+  margin:30px 85px 92px;
 }
 
 .bridge-cell {
@@ -213,7 +219,8 @@ button {
   max-width: 230px;
   font-size: 18px;
   line-height: 21px;
-  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .advantages-number {
@@ -269,6 +276,8 @@ button {
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 0 313px 93px;
+  width: 574px;
+  height: 60px;
 }
 
 .subscription-title-index {
@@ -277,17 +286,15 @@ button {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin: 94px 398px auto 398px;
-  width: 404px;
   height: 36px;
+  margin:93px 397px 28px;
 }
 
 .subscription-info-index {
-  text-align: center;
   color: #FFFFFF;
   width: 472px;
   height: 52px;
-  margin: 29px 362px auto 362px;
+  margin:29px 362px 46px;
 }
 
 .second-button {
@@ -306,6 +313,14 @@ button {
   text-align: center;
   width: 1200px;
   height: 411px;
+  padding:1px;
+}
+
+.subscription-catalog{
+  text-align: center;
+  width: 1200px;
+  height: 411px;
+  padding:1px;
 }
 
 .contacts-phone {
@@ -493,8 +508,12 @@ button {
 .footer-social-list {
   display: flex;
   max-width: 142px;
-  margin: 45px auto 35px 70px;
+  margin: 45px 42px 35px 70px;
   list-style-type: none;
+}
+
+.footer-social-item{
+margin:13px 12px;
 }
 
 .phone {
