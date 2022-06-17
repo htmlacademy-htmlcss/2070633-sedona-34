@@ -114,7 +114,6 @@ footer {
 .navigation-link {
   color: inherit;
   text-decoration: none;
-  text-align: center;
 }
 
 .promo-section {
@@ -198,7 +197,7 @@ button {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  margin:30px 85px 92px;
+  margin: 30px 85px 92px;
 }
 
 .bridge-cell {
@@ -259,6 +258,10 @@ button {
   margin: 91px 451px 29px;
 }
 
+.hotel-current-page {
+  margin: 20px 51px 17px 0;
+}
+
 .hotel-description {
   text-align: center;
   width: 592px;
@@ -280,21 +283,23 @@ button {
   height: 60px;
 }
 
+.subsription-text-color {
+  color: #FFFFFF;
+}
+
 .subscription-title-index {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #FFFFFF;
   height: 36px;
-  margin:93px 397px 28px;
+  margin: 93px 397px 28px;
 }
 
 .subscription-info-index {
-  color: #FFFFFF;
   width: 472px;
   height: 52px;
-  margin:29px 362px 46px;
+  margin: 29px 292px 46px;
 }
 
 .second-button {
@@ -313,14 +318,14 @@ button {
   text-align: center;
   width: 1200px;
   height: 411px;
-  padding:1px;
+  padding: 1px;
 }
 
-.subscription-catalog{
+.subscription-catalog {
   text-align: center;
-  width: 1200px;
+  width: 1056px;
   height: 411px;
-  padding:1px;
+  padding: 1px;
 }
 
 .contacts-phone {
@@ -353,6 +358,9 @@ button {
   line-height: 78px;
   color: #FFFFFF;
   margin-bottom: 10px;
+  width: 495px;
+  height: 78px;
+  margin: 0;
 }
 
 .div-filtra {
@@ -361,11 +369,14 @@ button {
   background-size: cover;
   color: #FFFFFF;
   width: 1200px;
+  padding: 35px 70px 70px;
 }
 
 .breadcrumbs {
   flex-direction: row;
   display: flex;
+  list-style-type: none;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -375,15 +386,21 @@ button {
 }
 
 .first-filter {
-  margin: 40px 70px 70px 70px;
+  margin: 40px 70px 0px 0px;
   width: 150px;
   height: 149px;
 }
 
 .second-filter {
-  margin: 40px 175px 40px 40px;
+  margin: 40px 175px 0px 0px;
   width: 145px;
   height: 149px;
+}
+
+.catalog-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sorting {
@@ -425,14 +442,48 @@ button {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-right: 191px;
+}
+
+.buttons-list {
+  margin-left: auto;
 }
 
 .sort {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  width: 290px;
+  height: 49px;
+}
+
+.pagination-line {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  padding: 12px 24px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style-type: none;
   margin-right: auto;
@@ -449,6 +500,8 @@ button {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .product-link {
@@ -468,7 +521,12 @@ button {
   text-transform: uppercase;
 }
 
+.hotel-list {
+  padding: 62px 72px 0 72px;
+}
+
 .hotel-number {
+  display: flex;
   font-size: 18px;
   line-height: 21px;
 }
@@ -512,8 +570,8 @@ button {
   list-style-type: none;
 }
 
-.footer-social-item{
-margin:13px 12px;
+.footer-social-item {
+  margin: 13px 12px;
 }
 
 .phone {
