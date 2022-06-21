@@ -503,8 +503,8 @@ button {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  max-width: 300px;
-  margin-bottom: 16px;
+  grid-area: title;
+  grid-column-start:auto;
 }
 
 .product-list {
@@ -523,12 +523,22 @@ button {
 
 .product-card {
   padding: 20px;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 211px 28px 21px 37px 37px;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
+  grid-template-areas: "image image"
+    "title title"
+    "text price"
+    "more add"
+    "stars rating";
 }
 
 .product-card-image {
   margin-bottom: 16px;
+  grid-area: image;
 }
 
 .product-card-text,
@@ -539,11 +549,61 @@ button {
   padding: 0;
 }
 
+.more {
+  text-decoration: none;
+  grid-area: more;
+  background: #756157;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 8px;
+}
+
+.add {
+  text-decoration: none;
+  grid-area: add;
+  background: #82B3D3;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 8px;
+}
+
+.add-selected {
+  background: #7DB54F;
+}
+
+.card-stars {
+  grid-area: stars;
+}
+
+.product-card-text {
+  grid-area: text;
+}
+
+.product-card-price {
+  grid-area: price;
+}
+
 .product-rating {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  grid-area: rating;
+  padding-top: 8px;
+  background: #F2F2F2;
+  border-radius: 4px;
 }
 
 .hotel-list {
