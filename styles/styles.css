@@ -79,11 +79,9 @@ footer {
 }
 
 .navigation-item-current {
-  position: relative;
   text-decoration-line: underline;
   text-underline-offset: 23px;
   text-decoration-thickness: 2px;
-  text-decoration-color: #756257;
 }
 
 .navigation {
