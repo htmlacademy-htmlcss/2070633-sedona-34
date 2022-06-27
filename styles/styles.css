@@ -78,22 +78,20 @@ footer {
   margin-right: 30px;
 }
 
+.navigation-item-current {
+  text-decoration-line: underline;
+  text-underline-offset: 23px;
+  text-decoration-thickness: 2px;
+}
+
 .navigation {
   display: flex;
+  position: relative;
 }
 
-.navigation-item {
-  margin: 20px 0;
-}
-
-.navigation-item:first-child {
-  margin-right: 34px;
-  margin-left: 17px;
-}
-
-.navigation-item:last-child {
-  margin-right: 62px;
-  margin-left: 34px;
+.navigation-link {
+  display: block;
+  padding: 20px 20px;
 }
 
 .navigation-list {
@@ -144,6 +142,7 @@ footer {
 .first-cell {
   max-width: 400px;
   background: #82B3D3;
+  padding: 92px 85px;
 }
 
 .advantages-item {
@@ -152,7 +151,7 @@ footer {
 }
 
 .advantages-icon {
-  margin: 0 78px 30px;
+  margin-bottom: 30px;
 }
 
 .last-row {
@@ -161,11 +160,12 @@ footer {
 
 .advantages-bonus-color {
   color: #FFFFFF;
-  margin: 92px 85px 30px;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .advantages-main-color {
@@ -191,6 +191,7 @@ button {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 .advantages-list {
@@ -203,12 +204,13 @@ button {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  margin: 30px 85px 92px;
+  margin-bottom: 0;
 }
 
 .bridge-cell {
   background: #82B3D3;
   max-width: 400px;
+  padding: 92px 85px;
 }
 
 .advantages-title {
@@ -224,14 +226,15 @@ button {
   max-width: 230px;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .advantages-number {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  margin-bottom: 30px;
+  display: block;
 }
 
 .ocean-color {
@@ -504,7 +507,6 @@ button {
   line-height: 28px;
   color: #000000;
   grid-area: title;
-  grid-column-start:auto;
 }
 
 .product-list {
@@ -519,6 +521,7 @@ button {
 
 .product-link {
   text-decoration: none;
+  grid-area: image;
 }
 
 .product-card {
@@ -536,10 +539,10 @@ button {
     "stars rating";
 }
 
+/*
 .product-card-image {
-  margin-bottom: 16px;
   grid-area: image;
-}
+} */
 
 .product-card-text,
 .product-card-price {
