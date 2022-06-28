@@ -128,12 +128,13 @@ footer {
 
 .welcome-title-place {
   max-width: 620px;
-  margin: 63px 290px 0;
+  margin: 0 auto 31px;
 }
 
 .welcome-text {
   text-align: center;
   width: 655px;
+  margin: 0 273px 90px;
 }
 
 .first-list-image {
@@ -194,7 +195,7 @@ button {
   border-radius: 3px;
   margin-right: 8px;
   color: #000;
-  padding: 16px;
+  padding: 9px 14px;
   text-decoration: none;
 }
 
@@ -347,7 +348,7 @@ button {
   text-align: center;
   width: 1200px;
   height: 411px;
-  padding: 0;
+  padding: 94px 200px;
 }
 
 .subscription-catalog {
@@ -368,6 +369,7 @@ button {
 
 .start-text {
   text-align: center;
+  padding-top: 63px;
 }
 
 .find-hotel {
@@ -418,12 +420,14 @@ button {
   margin: 40px 70px 0 0;
   width: 150px;
   height: 149px;
+  border: 0;
 }
 
 .second-filter {
   margin: 40px 175px 0 0;
   width: 145px;
   height: 149px;
+  border: 0;
 }
 
 .catalog-list {
@@ -435,6 +439,7 @@ button {
 .sorting {
   display: flex;
   margin-bottom: 56px;
+  align-items: center;
 }
 
 .catalog-filter {
@@ -478,6 +483,7 @@ button {
 
 .buttons-list {
   margin-left: auto;
+  display: flex;
 }
 
 .sort {
@@ -606,6 +612,7 @@ button {
 
 .card-stars {
   grid-area: stars;
+  color: rgba(131, 179, 211, 1);
 }
 
 .product-card-text {
