@@ -52,7 +52,6 @@ body {
   width: 1200px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
 header {
@@ -76,12 +75,6 @@ footer {
 .header-logo {
   width: 139px;
   margin-right: 30px;
-}
-
-.navigation-item-current {
-  text-decoration-line: underline;
-  text-underline-offset: 23px;
-  text-decoration-thickness: 2px;
 }
 
 .navigation {
@@ -109,6 +102,7 @@ footer {
 }
 
 .navigation-user {
+  align-items: baseline;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -174,16 +168,24 @@ footer {
   color: #000000;
 }
 
-button {
-  border: 0;
+.want-here-button:active {
+  color: rgba(255, 255, 255, 0.3)
 }
 
-.breadcrumbs li:first-child {
-  background-image: url("../images/catalog/arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 6px 8px;
-  background-position: center right;
-  padding-right: 15px;
+.want-here-button {
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: rgba(117, 97, 87, 1);
+  border-radius: 4px;
+  padding: 9px 15px 8px;
+  text-transform: uppercase;
+}
+
+.brown-hover:hover {
+  background-color: rgba(97, 80, 72, 1);
 }
 
 .breadcrumbs li:last-child {
@@ -191,12 +193,16 @@ button {
 }
 
 .catalog-sort-button {
-  border: solid black 2px;
+  border: 2px solid #E5E5E5;
   border-radius: 3px;
   margin-right: 8px;
   color: #000;
   padding: 9px 14px;
   text-decoration: none;
+}
+
+.catalog-sort-button:hover {
+  border: 2px solid #000000;
 }
 
 .advantages-layout {
@@ -295,18 +301,17 @@ button {
   margin: 0 304px 56px;
 }
 
+.basic-button:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .basic-button {
   background: #756157;
-  border-radius: 4px;
-  font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
   margin: 0 313px 93px;
   width: 574px;
   height: 60px;
+  border-radius: 4px;
 }
 
 .subsription-text-color {
@@ -333,6 +338,59 @@ button {
 }
 
 .second-button {
+  background-color: #82B3D3;
+}
+
+.second-button:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.blue-hover:hover {
+  background-color: #68A2CA;
+}
+
+.green-hover:hover {
+  background-color: rgba(108, 158, 66, 1);
+}
+
+.svg-social-footer:hover {
+  color: #68A2CA;
+}
+
+.contacts-phone:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+.pagination-item:not(:first-child) :hover {
+  background: #68A2CA;
+}
+
+.pagination-item:not(:first-child) :active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.small-buttons {
+  border: 0;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subscription-button {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.subscription-button:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.big-buttons {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -340,6 +398,8 @@ button {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
 }
 
 .subscription-index {
@@ -410,6 +470,10 @@ button {
   padding: 0;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -464,13 +528,6 @@ button {
   color: #FFFFFF;
 }
 
-.clear-button {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
 .hotels-title {
   font-weight: 700;
   font-size: 30px;
@@ -511,6 +568,12 @@ button {
   background-color: #82B3D3;
   text-decoration: none;
   padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.currant-page {
+  background-color: #F2F2F2;
+  color: rgba(0, 0, 0, 1);
 }
 
 .pagination-item:not(:last-child) {
@@ -565,11 +628,6 @@ button {
     "stars rating";
 }
 
-/*
-.product-card-image {
-  grid-area: image;
-} */
-
 .product-card-text,
 .product-card-price {
   font-size: 18px;
@@ -578,7 +636,16 @@ button {
   padding: 0;
 }
 
+.more:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.add:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .more {
+  cursor: pointer;
   text-decoration: none;
   grid-area: more;
   background: #756157;
@@ -604,10 +671,15 @@ button {
   font-size: 16px;
   line-height: 20px;
   padding-top: 8px;
+  cursor: pointer;
 }
 
 .add-selected {
   background: #7DB54F;
+}
+
+.add-selected:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card-stars {
@@ -705,4 +777,12 @@ button {
   width: 115px;
   height: 34px;
   margin: 48px 70px 38px auto;
+}
+
+.pagination-item:not(:first-child) a {
+  border: 1px solid #82B3D3;
+}
+
+.catalog-sort-button:first-child{
+  border: 2px solid #000000;
 }
