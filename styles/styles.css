@@ -84,7 +84,7 @@ footer {
 
 .navigation-link {
   display: block;
-  padding: 20px 20px;
+  padding: 20px 0 18px 0;
   color: #000;
   text-decoration: none;
 }
@@ -108,6 +108,14 @@ footer {
   list-style-type: none;
   display: flex;
   margin-left: auto;
+}
+
+.navigation-item {
+  padding: 0 20px;
+}
+
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
 }
 
 .promo-section {
@@ -184,7 +192,7 @@ footer {
   text-transform: uppercase;
 }
 
-.brown-hover:hover {
+.brown-move:hover {
   background-color: rgba(97, 80, 72, 1);
 }
 
@@ -345,11 +353,11 @@ footer {
   color: rgba(255, 255, 255, 0.3)
 }
 
-.blue-hover:hover {
+.blue-move:hover {
   background-color: #68A2CA;
 }
 
-.green-hover:hover {
+.green-move:hover {
   background-color: rgba(108, 158, 66, 1);
 }
 
@@ -425,6 +433,10 @@ footer {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .start-text {
@@ -571,13 +583,21 @@ footer {
   border-radius: 4px;
 }
 
-.currant-page {
+.current-page {
   background-color: #F2F2F2;
   color: rgba(0, 0, 0, 1);
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.catalog-sort-button:focus {
+  border: 2px solid rgba(104, 162, 202, 1);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination {
@@ -783,6 +803,18 @@ footer {
   border: 1px solid #82B3D3;
 }
 
-.catalog-sort-button:first-child{
+.catalog-sort-button:first-child {
   border: 2px solid #000000;
+}
+
+.footer-image:hover {
+  color: #756157;
+}
+
+.footer-image:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.svg-social-footer:active {
+  color: rgba(104, 162, 202, 0.3);
 }
