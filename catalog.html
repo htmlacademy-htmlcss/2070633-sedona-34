@@ -38,8 +38,8 @@
                 </a>
               </li>
               <li class="navigation-item">
-                <a href="#" class="navigation-link">
-                  <span class="visually-hidden">Избранное</span>
+                <a href="#" class="navigation-link favourite-heart" data-count="12"">
+                  <span class=" visually-hidden">Избранное</span>
                   <svg width="19" height="17" viewBox="0 0 19 17" fill="currentcolor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -115,6 +115,34 @@
                     </label>
                   </li>
                 </ul>
+              </fieldset>
+              <fieldset class="fird-filter">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <div class="left-input">
+                      <label class="catalog-filter-label">
+                        <input class="range-input" type="number" value="0" name="min-price"> <span class="input-text">от</span>
+                      </label>
+                    </div>
+                    <div class="right-input">
+                      <label class="catalog-filter-label">
+                        <input class="range-input" type="number" value="9000" name="max-price"> <span class="input-text">до</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="width:228px;">
+                      <button type="button" class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button type="button" class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
               </fieldset>
               <div class="filter-buttons">
                 <button class="second-button small-buttons blue-move" type="submit">ПРИМЕНИТЬ</button>
@@ -295,8 +323,8 @@
             <h3 class="subscription-title-index">Подпишитесь на рассылку</h3>
             <p class="subscription-info-index">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newletter-email"
-                required>
+              <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+                id="newletter-email" required>
               <button class="second-button blue-move big-buttons subscription-button"
                 type="submit"><span>ПОДПИСАТЬСЯ</span></button>
             </form>

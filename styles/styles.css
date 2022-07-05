@@ -204,6 +204,20 @@ footer {
   position: relative;
 }
 
+.subscription-field {
+  position: absolute;
+  left: 16.67%;
+  right: 33.33%;
+  top: 62.53%;
+  bottom: 22.87%;
+  width: 600px;
+  height: 60px;
+  padding: 0 0 0 22px;
+  background: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  border: 0;
+}
+
 .favourite-heart::after {
   top: 15px;
   left: 13px;
@@ -414,6 +428,13 @@ footer {
 
 .subscription-button {
   border-radius: 0 10px 10px 0;
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  left: 66.67%;
+  right: 16.67%;
+  top: 62.53%;
+  bottom: 22.87%;
 }
 
 .subscription-button:active {
@@ -439,9 +460,11 @@ footer {
   width: 1200px;
   height: 411px;
   padding: 94px 200px;
+  position: relative;
 }
 
 .subscription-catalog {
+  position: relative;
   text-align: center;
   width: 1056px;
   height: 411px;
@@ -482,7 +505,6 @@ footer {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
-  margin-bottom: 10px;
   width: 495px;
   height: 78px;
   margin: 0;
@@ -502,6 +524,7 @@ footer {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs-link:hover {
@@ -516,22 +539,22 @@ footer {
 
 .first-filter {
   margin: 40px 70px 0 0;
-  width: 150px;
-  height: 149px;
   border: 0;
+  padding: 0;
 }
 
 .second-filter {
   margin: 40px 175px 0 0;
   width: 145px;
-  height: 149px;
   border: 0;
+  padding: 0;
 }
 
 .catalog-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 145px;
 }
 
 .sorting {
@@ -549,11 +572,139 @@ footer {
   flex-direction: row;
 }
 
+.catalog-item {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-list:not(last-child) li{
+  margin-bottom: 15px;
+}
+
+.filter-buttons {
+  width: 160px;
+  height: 88px;
+  margin-top: 98px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fird-filter {
+  padding: 0;
+  height: 148px;
+  margin-top: 41px;
+  margin-right: 70px;
+  border: 0;
+}
+
+.catalog-filter-label {
+  display: flex;
+}
+
 .catalog-filter-title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   text-transform: capitalize;
   color: #FFFFFF;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin: 0;
+  width: 288px;
+  padding: 0;
+  border-radius: 2px;
+  background-color: grey;
+}
+
+.range-toggle {
+  outline: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -5px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -5px;
+}
+
+.range-bar {
+  height: 4px;
+  position: absolute;
+  background-color: white;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input {
+  padding: 14px 0 13px 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 0;
+  width: 144px;
+}
+
+.input-text {
+  padding: 12px 15px 15px 0;
+  opacity: 0.3;
+}
+
+.control {
+  /* display: flex; */
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin-top: 4px;
+
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.left-input {
+  border: 2px solid #FFFFFF;
+  border-right-width: 1px;
+  border-radius: 4px;
+}
+
+.right-input {
+  border: 2px solid #FFFFFF;
+  border-left-width: 1px;
+  border-radius: 4px;
 }
 
 .control-input {
@@ -575,6 +726,15 @@ footer {
 .buttons-list {
   margin-left: auto;
   display: flex;
+}
+
+.clear-button {
+  padding: 14px 15px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
 }
 
 .sort {
@@ -840,4 +1000,8 @@ footer {
 
 .svg-social-footer:active {
   color: rgba(104, 162, 202, 0.3);
+}
+
+.blue-move {
+  padding: 14px 15px;
 }
