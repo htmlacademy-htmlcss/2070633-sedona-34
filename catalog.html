@@ -60,7 +60,7 @@
             <h1 class="inner-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link arrow" href="index.html">
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="currentcolor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="m6.11 0-6 5.8V12h12V5.8l-6-5.8Zm5 11h-10V6.2l5-4.8 5 4.8V11Z" />
@@ -81,17 +81,38 @@
                 <ul class="catalog-list">
                   <li class="catalog-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Бассейн" checked>Бассейн
+                      <input class="control-input visually-hidden" type="checkbox" name="Бассейн" checked>
+                      <span class="control-mark">
+                        <svg class="check-mark" width="13" height="10" viewBox="0 0 13 10" fill="currentcolor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 0 4.5 7.4 1.1 3.5 0 4.7l4.5 5.2 7.7-8.6L11 0Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label"> Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Парковка" checked>Парковка
+                      <input class="control-input visually-hidden" type="checkbox" name="Парковка" checked>
+                      <span class="control-mark">
+                        <svg class="check-mark" width="13" height="10" viewBox="0 0 13 10" fill="currentcolor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 0 4.5 7.4 1.1 3.5 0 4.7l4.5 5.2 7.7-8.6L11 0Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                      <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
+                      <span class="control-mark">
+                        <svg class="check-mark" width="13" height="10" viewBox="0 0 13 10" fill="currentcolor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 0 4.5 7.4 1.1 3.5 0 4.7l4.5 5.2 7.7-8.6L11 0Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -101,17 +122,23 @@
                 <ul class="catalog-list">
                   <li class="catalog-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-item" checked>Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="product-item" checked>
+                      <span class="control-circle"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-item">Мотель
+                      <input class="control-input visually-hidden" type="radio" name="product-item">
+                      <span class="control-circle"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-item">Апартаменты
+                      <input class="control-input visually-hidden" type="radio" name="product-item">
+                      <span class="control-circle"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -122,12 +149,14 @@
                   <div class="range-wrapper-inputs">
                     <div class="left-input">
                       <label class="catalog-filter-label">
-                        <input class="range-input" type="number" value="0" name="min-price"> <span class="input-text">от</span>
+                        <input class="range-input" type="number" value="0" name="min-price"> <span
+                          class="input-text">от</span>
                       </label>
                     </div>
                     <div class="right-input">
                       <label class="catalog-filter-label">
-                        <input class="range-input" type="number" value="9000" name="max-price"> <span class="input-text">до</span>
+                        <input class="range-input" type="number" value="9000" name="max-price"> <span
+                          class="input-text">до</span>
                       </label>
                     </div>
                   </div>
@@ -190,7 +219,7 @@
                 <span class="product-card-text">Гостиница</span>
                 <span class="product-card-price">От 4000 ₽</span>
                 <a class="more brown-move" href="#">Подробнее</a>
-                <a class="add blue-move" href="#">В избранное</a>
+                <a class="add" href="#">В избранное</a>
                 <div class="card-stars">
                   <svg width="18" height="17" viewBox="0 0 18 17" fill="currentcolor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -249,8 +278,8 @@
                 </a>
                 <span class="product-card-text">Гостиница</span>
                 <span class="product-card-price">От 2500 ₽</span>
-                <a class="more brown-move href=" #">Подробнее</a>
-                <a class="add blue-move href=" #">В избранное</a>
+                <a class="more brown-move" href="#">Подробнее</a>
+                <a class="add" href="#">В избранное</a>
                 <div class="card-stars">
                   <svg width="18" height="17" viewBox="0 0 18 17" fill="currentcolor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -276,7 +305,7 @@
                 <span class="product-card-text">Гостиница</span>
                 <span class="product-card-price">От 1500 ₽</span>
                 <a class="more brown-move" href="#">Подробнее</a>
-                <a class="add blue-move" href="#">В избранное</a>
+                <a class="add" href="#">В избранное</a>
                 <div class="card-stars">
                   <svg width="18" height="17" viewBox="0 0 18 17" fill="currentcolor"
                     xmlns="http://www.w3.org/2000/svg">
