@@ -243,7 +243,6 @@ footer {
   position: absolute;
   width: 20px;
   height: 20px;
-  padding: ;
 }
 
 .catalog-sort-button {
@@ -663,8 +662,8 @@ footer {
   display: block;
   border-radius: 50%;
   position: absolute;
-  right: 5px;
-  bottom: 5px;
+  right: 2px;
+  bottom: 2px;
   content: "";
   width: 10px;
   height: 10px;
@@ -678,6 +677,7 @@ footer {
   background: #FFFFFF;
   left: 3px;
   border-radius: 50%;
+  border: 3px solid rgba(131, 179, 211, 0);
 }
 
 .control-input[type="radio"]:focus + .control-circle {
@@ -780,7 +780,7 @@ footer {
   color: #FFFFFF;
   background-color: transparent;
   border: 0;
-  width: 144px;
+  width: 110px;
 }
 
 .input-text {
@@ -1096,6 +1096,7 @@ footer {
 }
 
 .footer-image:hover {
+  cursor: pointer;
   color: #756157;
 }
 
@@ -1144,19 +1145,13 @@ footer {
 }
 
 .modal-close-button-block {
-  position: relative;
-}
-
-.modal-close-button {
+  position: absolute;
+  top: 54px;
+  right: 76px;
   border: none;
-  background-color: #F2F2F2;
   border-radius: 50%;
   width: 53px;
   height: 53px;
-  padding: 20px;
-  position: absolute;
-  top: 7px;
-  left: 517px;
 }
 
 .modal-title {
@@ -1224,6 +1219,7 @@ footer {
 .parents-amount-block {
   margin-bottom: 40px;
   position: relative;
+  display: flex;
 }
 
 .parents-amount-choose {
@@ -1240,40 +1236,67 @@ footer {
 
 .child-amount-title {
   margin-right: 43px;
+  padding-top: 10px;
+  display: block;
+}
+
+.fail-text {
+  color: #FF5757;
+}
+
+.modal-input-text {
+  top: 53px;
+  position: absolute;
+  width: 420px;
+  height: 29px;
+  left: 154px;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  padding-top: 5px;
 }
 
 .parents-amount-title {
-  margin-right: 57px;
+  margin-right: 43px;
+  padding: 10px;
 }
 
 .child-amount-block {
   position: relative;
+  display: flex;
+  margin-left: auto;
 }
 
-.minus-logo-child {
+.minus-icon-child {
   position: absolute;
-  top: 24px;
-  right: 100px;
+  border: none;
+  top: 13px;
+  right: 90px;
+  background-color: transparent;
 }
 
-.plus-logo-child {
+.plus-icon-child {
   position: absolute;
   top: 18px;
-  right: 23px;
+  right: 20px;
   opacity: 0.3;
+  border: none;
 }
 
-.minus-logo-parents {
+.minus-icon-parents {
   position: absolute;
-  top: 25px;
-  right: 153px;
+  top: 13px;
+  right: 144px;
+  border: none;
+  background-color: transparent;
 }
 
-.plus-logo-parents {
+.plus-icon-parents {
   position: absolute;
-  right: 85px;
-  top: 19px;
+  right: 75px;
+  top: 17px;
   opacity: 0.3;
+  border: none;
 }
 
 .child-amount-choose {
@@ -1318,12 +1341,12 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.modal-close-button:hover {
+.modal-close-button-block:hover {
   background-color: #E6E6E6;
   cursor: pointer;
 }
 
-.modal-close-button:focus {
+.modal-close-button-block:focus {
   background-color: #E6E6E6;
   border: 3px solid #83B3D3;
   cursor: pointer;
@@ -1333,7 +1356,6 @@ input[type=number]::-webkit-inner-spin-button {
 .modal-close-button:active {
   background-color: #E6E6E6;
   cursor: pointer;
-  opacity: 1;
   opacity: 0.3;
 }
 
@@ -1420,14 +1442,24 @@ input[type=number]::-webkit-inner-spin-button {
   outline: none;
 }
 
-.minus-logo:hover {
+.minus-logo:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
 
+.plus-logo:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.minus-logo:hover {
   cursor: pointer;
+  background-color: #000000;
 }
 
 .plus-logo:hover {
-
   cursor: pointer;
+  color: #000000;
 }
 
 .minus-logo:active {
@@ -1441,17 +1473,15 @@ input[type=number]::-webkit-inner-spin-button {
 .tooltip {
   position: absolute;
   right: 140px;
-  top: 7px;
+  top: 13px;
 }
 
 .tooltip-button {
-  /* top: 11px;
-  position: absolute;
-  right: 146px; */
   border: none;
   border-radius: 50%;
   background-color: #83B3D3;
-  padding: 8px 12px;
+  width: 25px;
+  height: 25px;
   margin: 0;
   display: block;
 }
@@ -1465,7 +1495,24 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  position: absolute;
   display: none;
+  right: -118px;
+  bottom: -146px;
+  padding: 15px 18px 18px 22px;
+}
+
+.tooltip-text::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #333333;
+  position: absolute;
+  right: 121px;
+  top: -10px;
 }
 
 .tooltip-button:hover + .tooltip-text,

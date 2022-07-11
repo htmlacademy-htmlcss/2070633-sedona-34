@@ -220,6 +220,7 @@
             <div class="come-block">
               <label class="date-come-title modal-title-typical">Дата Заезда:</label>
               <input type="text" name="date-come" class="date-come-choose" value="27 апреля 2020">
+              <span class="modal-input-text fail-text">Мы не можем отправить вас в прошлое.</span>
               <svg class="calendar-logo" width="15" height="15" viewBox="0 0 15 15" fill="currentcolor"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity=".3">
@@ -234,6 +235,7 @@
             <div class="departure-block">
               <label class="date-departure-title modal-title-typical">Дата Выезда:</label>
               <input type="text" name="date-departure" class="date-departure-choose" value="1 сентября 2021">
+              <span class="modal-input-text">На эти даты есть свободные номера. Пока есть.</span>
               <svg class="calendar-logo" width="15" height="15" viewBox="0 0 15 15" fill="currentcolor"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity=".3">
@@ -248,15 +250,21 @@
             <div class="amount-line">
               <div class="parents-amount-block">
                 <label class="parents-amount-title modal-title-typical">Взрослые:</label>
-                <input type="number" step="1" id="amount" name="amount" class="parents-amount-choose" placeholder="2">
-                <svg class="minus-logo-parents minus-logo" width="13" height="1" viewBox="0 0 13 1" fill="currentcolor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3" d="M0 0v1h13V0H0Z" />
-                </svg>
-                <svg class="plus-logo-parents plus-logo" width="13" height="13" viewBox="0 0 13 13" fill="currentcolor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                </svg>
+                <div class="parents-input-block">
+                  <input type="number" step="1" id="amount" name="amount" class="parents-amount-choose" placeholder="2">
+                  <button class="minus-icon-parents">
+                    <svg class="minus-logo-parents minus-logo" width="13" height="1" viewBox="0 0 13 1"
+                      fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity=".3" d="M0 0v1h13V0H0Z" />
+                    </svg>
+                  </button>
+                  <button class="plus-icon-parents">
+                    <svg class="plus-logo-parents plus-logo" width="13" height="13" viewBox="0 0 13 13"
+                      fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
               <div class="child-amount-block">
                 <sapn class="form-label">
@@ -279,15 +287,21 @@
                       с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </sapn>
-                <input class="child-amount-choose" placeholder="1" type="number" step="1" id="amount" name="amount">
-                <svg class="minus-logo-child minus-logo" width="13" height="1" viewBox="0 0 13 1" fill="currentcolor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3" d="M0 0v1h13V0H0Z" />
-                </svg>
-                <svg class="plus-logo-child plus-logo" width="13" height="13" viewBox="0 0 13 13" fill="currentcolor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                </svg>
+                <div class="child-input-block">
+                  <input class="child-amount-choose" placeholder="1" type="number" step="1" id="amount" name="amount">
+                  <button class="minus-icon-child">
+                    <svg class="minus-logo-child minus-logo" width="13" height="1" viewBox="0 0 13 1"
+                      fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity=".3" d="M0 0v1h13V0H0Z" />
+                    </svg>
+                  </button>
+                  <button class="plus-icon-child">
+                    <svg class="plus-logo-child plus-logo" width="13" height="13" viewBox="0 0 13 13"
+                      fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             <button type="button" class="modal-big-button">Найти</button>
