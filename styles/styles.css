@@ -35,6 +35,7 @@ html {
 
 body {
   min-height: 100%;
+  min-width: 1200px;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -48,10 +49,12 @@ body {
 }
 
 .page-container {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   width: 1200px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 header {
@@ -71,6 +74,7 @@ footer {
   font-weight: 700;
   font-size: 20px;
   height: 65px;
+  max-height: 200px;
 }
 
 .header-logo {
@@ -91,6 +95,8 @@ footer {
 }
 
 .navigation-list {
+  max-width: 550px;
+  flex-wrap: wrap;
   display: flex;
   margin: 0;
   padding: 0;
@@ -112,17 +118,28 @@ footer {
   bottom: 0;
 }
 
+.navigation-item-user:not(:last-child) {
+  padding: 2px 15px;
+}
+
+.navigation-item-user:last-child {
+  padding-left: 11px;
+}
+
 .navigation-user {
+  max-width: 400px;
   align-items: baseline;
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .navigation-item {
-  padding: 0 20px;
+  padding: 2px 20px 0 17px;
 }
 
 .navigation-link-current {
@@ -218,18 +235,23 @@ footer {
   position: relative;
 }
 
-.subscription-field {
+.subscription-field-catalog {
   position: absolute;
-  left: 16.67%;
+  left: 11.67%;
   right: 33.33%;
   top: 62.53%;
   bottom: 22.87%;
   width: 600px;
   height: 60px;
-  padding: 0 0 0 22px;
   background: #F2F2F2;
   border-radius: 10px 0 0 10px;
   border: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'PT Sans';
+  padding: 3px 0 0 27px;
+  margin-top: 25px;
 }
 
 .favourite-heart::after {
@@ -248,12 +270,15 @@ footer {
   height: 20px;
 }
 
+.buttons-list a:not(:last-child) {
+  margin-right: 8px;
+}
+
 .catalog-sort-button {
   border: 2px solid #E5E5E5;
   border-radius: 3px;
-  margin-right: 8px;
   color: #000;
-  padding: 9px 14px;
+  padding: 6px 14px;
   text-decoration: none;
   outline: none;
 }
@@ -267,11 +292,31 @@ footer {
   flex-wrap: wrap;
 }
 
+.subscription-field-index {
+  position: absolute;
+  left: 17%;
+  right: 33%;
+  top: 62%;
+  bottom: 22%;
+  width: 600px;
+  height: 60px;
+  background: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  border: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'PT Sans';
+  padding: 3px 0 0 27px;
+  margin-top: 2px;
+}
+
 .advantages-number-second {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
   margin-bottom: 30px;
+  display: block;
 }
 
 .advantages-list {
@@ -367,12 +412,37 @@ footer {
   font-size: 20px;
   margin: 0 313px 93px;
   width: 574px;
-  height: 60px;
   border-radius: 4px;
+  padding: 12px 15px;
+  font-family: 'PT Sans';
 }
 
 .subsription-text-color {
   color: #FFFFFF;
+}
+
+.subscription-title-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 404px;
+  margin: auto;
+  padding: 0;
+  padding-bottom: 29px;
+  margin-top: 25px;
+}
+
+.subscription-info-index {
+  width: 472px;
+  height: 52px;
+  margin: auto;
+  padding: 0;
+  padding-bottom: 46px;
+}
+
+.second-button {
+  background-color: #82B3D3;
 }
 
 .subscription-title-index {
@@ -383,19 +453,8 @@ footer {
   width: 404px;
   margin: auto;
   padding: 0;
-  margin-bottom: 29px;
-}
-
-.subscription-info-index {
-  width: 472px;
-  height: 52px;
-  margin: auto;
-  padding: 0;
-  margin-bottom: 46px;
-}
-
-.second-button {
-  background-color: #82B3D3;
+  padding-bottom: 29px;
+  margin-top: 2px;
 }
 
 .second-button:active {
@@ -445,19 +504,27 @@ footer {
   font-weight: 700;
   line-height: 20px;
   border-radius: 4px;
-  font-size: 16px;
   cursor: pointer;
 }
 
-.subscription-button {
+.subscription-button-catalog {
   border-radius: 0 10px 10px 0;
-  height: 60px;
-  width: 200px;
+  position: absolute;
+  left: 68.67%;
+  right: 11.67%;
+  top: 68.53%;
+  bottom: 16.87%;
+  font-family: 'PT Sans';
+}
+
+.subscription-button-index {
+  border-radius: 0 10px 10px 0;
   position: absolute;
   left: 66.67%;
   right: 16.67%;
   top: 62.53%;
   bottom: 22.87%;
+  font-family: 'PT Sans';
 }
 
 .subscription-button:active {
@@ -529,6 +596,8 @@ footer {
   width: 495px;
   height: 78px;
   margin: 0;
+  margin-bottom: 7px;
+  padding-top: 2px;
 }
 
 .div-filtra {
@@ -537,7 +606,7 @@ footer {
   background-size: cover;
   color: #FFFFFF;
   width: 1200px;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 55px;
 }
 
 .breadcrumbs {
@@ -548,21 +617,21 @@ footer {
   margin: 0;
 }
 
+.breadcrumbs-item:first-child {
+  padding-left: 5px;
+}
+
 .breadcrumbs-item:not(:last-of-type)::after {
   content: url(../Images/Catalog/arrow.svg);
   width: 6px;
   height: 8px;
-  padding-left: 10px;
+  padding-left: 5px;
   cursor: pointer;
   padding-right: 10px;
 }
 
 .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.breadcrumbs:last-child {
-  margin-left: 15px;
 }
 
 .breadcrumbs-link {
@@ -595,7 +664,6 @@ footer {
 .sorting {
   display: flex;
   margin-bottom: 56px;
-  align-items: center;
 }
 
 .sort:hover {
@@ -646,7 +714,7 @@ footer {
 .control {
   position: relative;
   display: block;
-  padding-left: 40px;
+  padding-left: 42px;
 }
 
 .control-mark {
@@ -712,7 +780,6 @@ footer {
 .fird-filter {
   margin: 0;
   padding: 0;
-  height: 148px;
   margin-top: 41px;
   margin-right: 70px;
   border: 0;
@@ -790,7 +857,7 @@ footer {
 
 .range-input {
   outline: none;
-  padding: 14px 0 13px 18px;
+  padding: 7px 0 8px 18px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -802,7 +869,7 @@ footer {
 }
 
 .input-text {
-  padding: 12px 15px 15px 0;
+  padding: 6px 10px 15px 0;
   opacity: 0.3;
 }
 
@@ -865,6 +932,12 @@ footer {
   color: #FFFFFF;
 }
 
+.hotels-on-page {
+  width: 160px;
+  height: 49px;
+  padding: 19px 0 14px 18px;
+}
+
 .hotels-title {
   font-weight: 700;
   font-size: 30px;
@@ -873,15 +946,18 @@ footer {
   color: #000000;
   margin: 0;
   margin-right: 191px;
+  padding: 5px 0 12px 4px;
 }
 
 .buttons-list {
   margin-left: auto;
   display: flex;
+  margin-bottom: 8px;
+  margin-top: -2px;
 }
 
 .clear-button {
-  padding: 14px 15px;
+  padding: 21px 15px;
   background-color: transparent;
   font-weight: 400;
   font-size: 16px;
@@ -907,6 +983,9 @@ footer {
   border-radius: 4px;
   width: 290px;
   height: 49px;
+  padding: 0 14px;
+  font-family: 'PT Sans';
+  font-size: 18px;
 }
 
 .pagination-line {
@@ -958,11 +1037,13 @@ footer {
   display: flex;
   list-style-type: none;
   margin-right: auto;
+  margin-top: 4px;
 }
 
 .product-card-title {
+  padding-top: 10px;
+  padding-left: 3px;
   margin: 0;
-  padding: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -978,6 +1059,7 @@ footer {
   padding: 0;
   margin: 0;
   margin-bottom: 96px;
+  row-gap: 9px;
 }
 
 .product-link {
@@ -986,7 +1068,7 @@ footer {
 }
 
 .product-card {
-  padding: 20px;
+  padding: 15px 21px;
   margin: 0;
   display: grid;
   grid-template-rows: 211px 28px 21px 37px 37px;
@@ -1069,6 +1151,7 @@ footer {
 
 .product-card-price {
   grid-area: price;
+  padding-left: 2px;
 }
 
 .product-rating {
@@ -1085,13 +1168,14 @@ footer {
 }
 
 .hotel-list {
-  padding: 62px 72px 0 72px;
+  padding: 57px 72px 0 72px;
 }
 
 .hotel-number {
   display: flex;
   font-size: 18px;
   line-height: 21px;
+  margin-top: 6px;
 }
 
 .subscription-title-catalog {
@@ -1126,11 +1210,30 @@ footer {
   margin: 0 auto;
 }
 
+.social-link-catalog {
+  padding-top: 24px;
+  padding-left: 1px;
+}
+
 .footer-social-list {
   display: flex;
   max-width: 142px;
-  margin: 45px 42px 35px 70px;
+  margin: 41px 42px 40px 30px;
   list-style-type: none;
+}
+
+.footer-logo-catalog {
+  display: block;
+  width: 115px;
+  height: 34px;
+  margin: 73px 70px 38px auto;
+}
+
+.phone-catalog {
+  display: block;
+  width: 720px;
+  height: 50px;
+  margin: 69px 0 30px 40px;
 }
 
 .footer-social-item {
@@ -1141,14 +1244,14 @@ footer {
   display: block;
   width: 720px;
   height: 50px;
-  margin: 40px 0 30px 0;
+  margin: 47px 0 30px 40px;
 }
 
 .footer-logo {
   display: block;
   width: 115px;
   height: 34px;
-  margin: 48px 70px 38px auto;
+  margin: 50px 70px 38px auto;
 }
 
 .current-catalog-button {
@@ -1178,7 +1281,7 @@ footer {
 }
 
 .blue-move {
-  padding: 14px 15px;
+  padding: 15px 15px;
 }
 
 .modal-container {
@@ -1206,8 +1309,8 @@ footer {
 
 .modal-close-button-block {
   position: absolute;
-  top: 54px;
-  right: 76px;
+  top: 55px;
+  right: 71px;
   border: none;
   border-radius: 50%;
   width: 53px;
@@ -1288,7 +1391,7 @@ footer {
 }
 
 .child-amount-title {
-  margin-right: 43px;
+  margin-right: 49px;
   padding-top: 10px;
   display: block;
 }
@@ -1310,8 +1413,9 @@ footer {
 }
 
 .parents-amount-title {
-  margin-right: 43px;
+  margin-right: 53px;
   padding: 10px;
+  padding-left: 1px;
 }
 
 .child-amount-block {
@@ -1471,8 +1575,6 @@ input[type=number]::-webkit-inner-spin-button {
   outline: none;
 }
 
-.minus-logo-parents {}
-
 .minus-icon-parents:hover {
   opacity: 1;
   outline: none;
@@ -1504,7 +1606,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .tooltip {
   position: absolute;
-  right: 140px;
+  right: 151px;
   top: 13px;
 }
 
@@ -1518,6 +1620,11 @@ input[type=number]::-webkit-inner-spin-button {
   display: block;
 }
 
+.tooltip-button:hover {
+  background-color: #68A2CA;
+  cursor: pointer;
+}
+
 .tooltip-text {
   width: 256px;
   background-color: #333333;
@@ -1529,9 +1636,10 @@ input[type=number]::-webkit-inner-spin-button {
   line-height: 20px;
   position: absolute;
   display: none;
-  right: -118px;
-  bottom: -146px;
-  padding: 15px 18px 18px 22px;
+  right: -115px;
+  bottom: -158px;
+  height: 143px;
+  padding: 18px 18px 13px 20px;
 }
 
 .tooltip-text::before {
@@ -1557,10 +1665,20 @@ input[type=number]::-webkit-inner-spin-button {
   color: #68A2CA;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .button {
   color: #83B3D3;
+}
+
+.blue-move:disabled {
+  color: var(--white);
+  background-color: var(--light-gray);
+}
+
+.brown-move:disabled {
+  color: var(--white);
+  background-color: var(--light-gray);
 }
