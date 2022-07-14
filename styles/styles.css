@@ -151,6 +151,7 @@ footer {
   background-size: cover;
   height: 485px;
   position: relative;
+  background-color: gray;
 }
 
 .logo-welcome {
@@ -172,7 +173,7 @@ footer {
   max-width: 800px;
 }
 
-.first-cell {
+.advantages-start-cell {
   max-width: 400px;
   background: #82B3D3;
   padding: 92px 85px;
@@ -311,7 +312,7 @@ footer {
   margin-top: 2px;
 }
 
-.advantages-number-second {
+.advantages-number-white {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
@@ -325,7 +326,7 @@ footer {
   padding: 0;
 }
 
-.advantages-description-second {
+.advantages-description-white {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
@@ -388,7 +389,7 @@ footer {
   color: #000000;
 }
 
-.second-hotel-title {
+.index-hotel-title {
   margin: 91px 451px 29px;
 }
 
@@ -441,7 +442,7 @@ footer {
   padding-bottom: 46px;
 }
 
-.second-button {
+.sky-button {
   background-color: #82B3D3;
 }
 
@@ -546,6 +547,7 @@ footer {
 .subscription-index {
   background-image: url("../images/Footer/background-subscription.jpg");
   background-repeat: no-repeat;
+  background-color: gray;
   text-align: center;
   width: 1200px;
   height: 411px;
@@ -600,9 +602,10 @@ footer {
   padding-top: 2px;
 }
 
-.div-filtra {
+.filter-block {
   background-image: url("../Images/Catalog/Catalog-filter.jpg");
   background-repeat: no-repeat;
+  background-color: gray;
   background-size: cover;
   color: #FFFFFF;
   width: 1200px;
@@ -641,13 +644,13 @@ footer {
   text-decoration: none;
 }
 
-.first-filter {
+.infrastructure-filter {
   margin: 40px 70px 0 0;
   border: 0;
   padding: 0;
 }
 
-.second-filter {
+.housing-filter {
   margin: 40px 175px 0 0;
   width: 145px;
   border: 0;
@@ -777,7 +780,7 @@ footer {
   flex-direction: column;
 }
 
-.fird-filter {
+.price-filter {
   margin: 0;
   padding: 0;
   margin-top: 41px;
